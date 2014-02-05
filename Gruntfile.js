@@ -222,19 +222,19 @@ module.exports = function (grunt) {
         }
       }
     },
-    imagemin: {
-      dist: {
-        options: {
-          progressive: true
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: '**/*.{jpg,jpeg,png}',
-          dest: '<%= yeoman.dist %>'
-        }]
-      }
-    },
+    // imagemin: {
+    //   dist: {
+    //     options: {
+    //       progressive: true
+    //     },
+    //     files: [{
+    //       expand: true,
+    //       cwd: '<%= yeoman.dist %>',
+    //       src: '**/*.{jpg,jpeg,png}',
+    //       dest: '<%= yeoman.dist %>'
+    //     }]
+    //   }
+    // },
     svgmin: {
       dist: {
         files: [{
@@ -296,7 +296,7 @@ module.exports = function (grunt) {
     buildcontrol: {
       dist: {
         options: {
-          remote: 'git@github.com:baudoin/baudoin-jekyll.git',
+          remote: 'git@github.com:baudoin/tailored.git',
           branch: 'production',
           commit: true,
           push: true
@@ -400,7 +400,7 @@ module.exports = function (grunt) {
     'autoprefixer:dist',
     'cssmin',
     // 'uglify',
-    'imagemin',
+    // 'imagfemin',
     'svgmin',
     'rev',
     'usemin',
